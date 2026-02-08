@@ -1,8 +1,8 @@
-import { MainNav, SidebarNavItem } from "@/types/nav"
+import { MainNav, SidebarNavItem } from "@/types/nav";
 
 interface DocsConfig {
-  mainNav: MainNav[]
-  sidebarNav: SidebarNavItem[]
+  mainNav: MainNav[];
+  sidebarNav: SidebarNavItem[];
 }
 
 export const docsConfig: DocsConfig = {
@@ -12,12 +12,12 @@ export const docsConfig: DocsConfig = {
       href: "/docs",
     },
     {
-      title: "Components",
-      href: "/docs/components",
+      title: "Examples",
+      href: "/docs/examples",
     },
     {
       title: "GitHub",
-      href: "https://github.com/tanmayvaij/mindloop-core",
+      href: "https://github.com/tanmayvaij/mindloop-gemini",
       external: true,
     },
     {
@@ -41,31 +41,31 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
-          title: "Architecture",
-          href: "/docs/architecture",
+          title: "Quick Start",
+          href: "/docs/quickstart",
           items: [],
         },
       ],
     },
     {
-      title: "Core Concepts",
+      title: "Documentation",
       items: [
         {
-          title: "Base Agent",
-          href: "/docs/base-agent",
+          title: "Architecture",
+          href: "/docs/architecture",
           items: [],
         },
         {
-          title: "Tools",
-          href: "/docs/tools",
+          title: "API Reference",
+          href: "/docs/api",
           items: [],
         },
         {
-          title: "Memory",
-          href: "/docs/memory",
+          title: "Examples",
+          href: "/docs/examples",
           items: [],
         },
       ],
     },
   ],
-}
+};

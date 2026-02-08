@@ -25,7 +25,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ThemeProvider
@@ -36,7 +36,7 @@ export default function RootLayout({
         >
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
-            <div className="flex-1 pt-14">{children}</div>
+            <div className="flex-1">{children}</div>
           </div>
         </ThemeProvider>
       </body>
