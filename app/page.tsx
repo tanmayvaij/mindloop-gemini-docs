@@ -364,16 +364,6 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://mindloop.netlify.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm text-muted-foreground transition-colors hover:text-primary"
-              >
-                Documentation
-              </a>
-            </li>
-            <li>
-              <a
                 href="https://www.npmjs.com/package/mindloop-gemini"
                 target="_blank"
                 rel="noopener noreferrer"
