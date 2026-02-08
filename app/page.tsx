@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { useEffect, useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -155,7 +156,7 @@ export default function HomePage() {
             </li>
             <li>
               <a
-                href="https://github.com/tanmayvaij"
+                href="https://github.com/tanmayvaij/mindloop-gemini"
                 className="text-sm text-muted-foreground transition-colors hover:text-primary"
               >
                 GitHub
@@ -167,17 +168,33 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="mx-auto max-w-[1200px] px-12 pb-32 pt-40">
-        <h1 className="mb-8 font-serif text-6xl font-normal leading-[1.1] text-primary">
-          A lightweight framework for building AI agents with Gemini
-        </h1>
-        <p className="mb-12 max-w-[600px] text-base leading-[1.8] text-muted-foreground">
-          MindLoop Gemini provides type-safe orchestration for Google's Gemini
-          models, handling tools, memory, and structured outputs with minimal
-          dependencies.
-        </p>
-        <code className="inline-block border border-border bg-card px-6 py-4 text-sm text-foreground">
-          npm install mindloop-gemini
-        </code>
+        <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
+          <div>
+            <h1 className="mb-8 font-serif text-6xl font-normal leading-[1.1] text-primary">
+              A lightweight framework for building AI agents with Gemini
+            </h1>
+            <p className="mb-12 max-w-[600px] text-base leading-[1.8] text-muted-foreground">
+              MindLoop Gemini provides type-safe orchestration for Google's
+              Gemini models, handling tools, memory, and structured outputs with
+              minimal dependencies.
+            </p>
+            <code className="inline-block border border-border bg-card px-6 py-4 text-sm text-foreground">
+              npm install mindloop-gemini
+            </code>
+          </div>
+          <div className="relative">
+            <div className="relative overflow-hidden p-8 transition-transform hover:scale-105">
+              <Image
+                src="/hero.png"
+                alt="MindLoop Gemini Hero"
+                width={500}
+                height={500}
+                className="h-auto w-full"
+                priority
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Content */}

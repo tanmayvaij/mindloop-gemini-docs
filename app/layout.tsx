@@ -13,6 +13,11 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "MindLoop Gemini - Documentation",
   description: "Documentation for MindLoop Gemini agent adapter.",
+  icons: {
+    icon: "/hero.png",
+    shortcut: "/hero.png",
+    apple: "/hero.png",
+  },
 };
 
 export default function RootLayout({
